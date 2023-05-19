@@ -1,0 +1,97 @@
+
+.team {
+  margin-left: 0px;
+  margin-right: 0px;
+  background: $whiter-color;
+
+&__h2 {
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+&__list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+&__li {
+  flex-basis: (calc(100% - 90px)/4);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+&__figure {
+  background: $white-color;
+  margin: 0px;
+}
+
+&__icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 16px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+
+ & :hover{
+  fill: #2196f3;
+}
+&:focus {
+  fill: #2196f3;
+}
+}
+
+&__social-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 16px;
+}
+
+
+&__signature-position {
+      font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+&__signature-inside {
+      margin-bottom: 10px;
+  line-height: 1.19;
+}
+&__job-position {
+      font-style: normal;
+  font-weight: 400;
+  color: $silver-color;
+}
+&__social-icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  & use {
+    fill: $footer-color;
+  }
+  &:hover use {
+    fill: $portfolio-div-color;
+  }
+  &:focus use {
+    fill: $portfolio-div-color;
+  }
+  &:hover .team__circle-social-icon {
+    fill: $blue-color;
+  }
+  &:focus .team__circle-social-icon {
+    fill: $blue-color;
+  }
+}
+}

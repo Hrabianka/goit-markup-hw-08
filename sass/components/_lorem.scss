@@ -1,0 +1,50 @@
+.lorem {
+  padding-bottom: 0px;
+
+
+
+
+&__ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+&__li {
+  flex-basis: (calc(100% - 90px))/4;
+}
+
+&__icon {
+  outline: 1px dashed $whiter-color;
+  background-color: $whiter-color;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
+
+&__h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+&__p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $silver-color;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+}

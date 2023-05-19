@@ -1,0 +1,298 @@
+.main-index {
+  background: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background.jpg');
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $grey-color;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-position: center, center;
+  background-repeat: no-repeat;*/
+
+
+&__flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+&__h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 696px;
+  color: $white-color;
+}
+
+&__button {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px 41px 10px 42px;
+  margin-top: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background;
+  background: $blue-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $white-color;
+
+  &:hover {
+    background: $blue-color;
+    color: $white-color;
+  }
+  &:focus {
+    background: $blue-color;
+    color: $white-color;
+  }
+}
+
+&__modal {
+  position: fixed;
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: pointer-events, visibility, opacity, transform, pointer-events;
+  z-index: 4;
+}
+
+&__inside-modal {
+  position: absolute;
+  height: 581px;
+  width: 528px;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(0);
+}
+&__close-data-modal {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  border: 0;
+  background-color: $white-color;
+}
+&__modal-test {
+  width: 30px;
+  height: 30px;
+  padding-right: 0;
+}
+
+&__form-data{
+margin: 40px;
+}
+
+&__form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+&__form-group-p{
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color;
+  margin: 0;
+}
+
+&__form-group-label{
+      margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  color: $silver-color;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  position: relative;
+  letter-spacing: 0.01em;
+
+}
+
+&__form-group-svg{
+      position: absolute;
+  left: 12px;
+  top: 32px;
+  width: 12px;
+  height: 12px;
+  fill: $black-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, border-color, fill;
+}
+
+&__form-group-input{
+      border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  height: 40px;
+  width: 448px;
+  padding-left: 38px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, border-color, fill;
+
+  &:focus{
+  fill: $blue-color;
+  border-color: $blue-color;
+  outline: none;
+}
+&:focus-within + .main-index-form-group-svg {
+  fill: $blue-color;
+  border-color: $blue-color;
+  outline: none;
+}
+}
+
+&__form-group-input-feedback{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, border-color;
+  &:focus {
+  border-color: $blue-color;
+  outline: none;
+}
+}
+
+&__form-group-input-last {
+  margin-top: 4px;
+  width: 16px;
+  height: 15px;
+  display: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, display, outline;
+}
+
+&__form-group-label-last{
+      margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  position: relative;
+  display: block;
+  padding-left: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  & .main-index-form-group-input-last {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;}
+  & .main-index-form-group-input-last:checked ~ .main-index-checkmark {
+  background-color: $blue-color;
+  border-color: $blue-color;
+
+}
+
+
+& .main-index-form-group-input-last:checked ~ .main-index-checkmark:after {
+  display: block;
+}
+
+}
+&__test-checkmark{
+      position: absolute;
+  left: -3px;
+  top: -4px;
+  height: 14px;
+  width: 15px;
+}
+&__terms{
+      font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  letter-spacing: 0.03em;
+  left: 24px;
+  top: 0;
+  color: $silver-color;
+}
+&__conditions{
+      color: #2196f3;
+  text-decoration: underline;
+}
+&__send-form-info{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $blue-color;
+  color: $white-color;
+  height: 50px;
+  width: 200px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: $blue-color;
+}
+
+
+&__checkmark{
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 15px;
+  width: 16px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, content, position, display, outline;
+    &:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+}}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0);
+  pointer-events: none;
+}

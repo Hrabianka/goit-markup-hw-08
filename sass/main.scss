@@ -1,0 +1,45 @@
+@import 'utils/variables';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/portfolio-header';
+@import 'components/portfolio';
+@import 'components/main-index';
+@import 'components/lorem';
+@import 'components/what-section';
+@import 'components/team';
+@import 'components/clients';
+
+body {
+  font-family: $main-font, sans-serif;
+  background: $white-color;
+  color: $text-color;
+  font-weight: 500;
+}
+ul {
+  list-style-type: none;
+  padding: 0%;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+label {
+  margin-bottom: 8px;
+}
