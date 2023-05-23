@@ -2,11 +2,51 @@
   background: $grey-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  
+
+  &__flex {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+    
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+      column-gap: 144px;
+    }
+
+    @include desktop {
+      flex-wrap: nowrap;
+      gap: 78px;
+    }
+  }
+
+  &__form {
+    @include tablet {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @include desktop {
+      display: -webkit-box;
+    }
+  }
 
   &__test-newsletter {
-    margin-left: 24px;
     position: absolute;
     right: 28px;
+    @include tablet {
+      text-align: center;
+    }
+    @include desktop {
+      margin-left: 24px;
+    }
   }
 
   &__newsletter-e-mail {
@@ -19,14 +59,21 @@
     top: 2787px;
     color: rgba(255, 255, 255, 0.6);
     margin-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    @include tablet {
+      width: 450px;
+    }
+    @include desktop {
+      width: 358px;
+    }
   }
 
   &__button-newsletter {
     color: $white-color;
-    
     width: 200px;
     height: 50px;
     background: $blue-color;
@@ -45,7 +92,19 @@
     letter-spacing: 0.06em;
     text-align: center;
     vertical-align: text-top;
-    position: absolute;
+    margin-top: 20px;
+    position: relative;
+    @include tablet {
+      vertical-align: bottom;
+      margin-left: auto;
+      margin-right: auto;
+
+      //margin-left: 125px;
+    }
+    @include desktop {
+      position: absolute;
+      margin-top: 0;
+    }
   }
 
   &__newsletter {
@@ -58,6 +117,12 @@
     color: $white-color;
     margin-top: 14px;
     margin-bottom: 20px;
+    @include tablet {
+      text-align: center;
+    }
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__logo {
@@ -114,16 +179,18 @@
   &__li {
     margin-top: 9px;
   }
- @media screen and (min-width: 1200px) {
-  &__flex {
-    display: flex;
-    justify-content: flex-start;
-    gap: 70px;
-  }}
+  @include desktop {
+    &__flex {
+      display: flex;
+      justify-content: flex-start;
+      gap: 70px;
+    }
+  }
 
   &__social-ul {
     display: flex;
     gap: 10px;
+    justify-content: center;
   }
 
   &__p {
@@ -132,6 +199,12 @@
     font-size: 14px;
     color: $white-color;
     margin-bottom: 20px;
+    @include tablet {
+      //text-align: center;
+    }
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__social-icon {
