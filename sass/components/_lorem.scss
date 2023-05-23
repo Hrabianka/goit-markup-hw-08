@@ -61,6 +61,13 @@
     color: inherit;
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__p {
