@@ -1,50 +1,84 @@
 .lorem {
   padding-bottom: 0px;
 
+  &__ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
 
+    @include desktop {
+      gap: 30px;
+    }
+  }
 
-&__ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+  &__li {
+    @include tablet {
+      flex-basis: (calc(100% - 90px))/2;
+    }
+    @include desktop {
+      flex-basis: (calc(100% - 90px))/4;
+    }
+  }
 
+  &__icon {
+    outline: 1px dashed $whiter-color;
+    background-color: $whiter-color;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 190px;
+    margin-bottom: 30px;
+    width: 450px;
+    height: 120px;
+    @include tablet {
+      width: 354px;
+      height: 120px;
+      padding-left: 142px;
+    }
 
-&__li {
-  flex-basis: (calc(100% - 90px))/4;
-}
+    @include desktop {
+      width: 270px;
+      height: 120px;
+      padding-left: 100px;
+    }
+  }
 
-&__icon {
-  outline: 1px dashed $whiter-color;
-  background-color: $whiter-color;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  padding-left: 100px;
-  margin-bottom: 30px;
-}
+  &__h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
-&__h5 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+  &__p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $silver-color;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 450px;
 
-&__p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: $silver-color;
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
+    @include tablet {
+      width: 354px;
+    }
+
+    @include desktop {
+      width: 270px;
+    }
+  }
 }

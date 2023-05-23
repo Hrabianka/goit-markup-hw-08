@@ -15,13 +15,15 @@
   &__list {
     justify-content: center;
     display: flex;
-  flex-direction: column;
-  gap: 30px;
+    flex-direction: column;
+    gap: 30px;
+
     @include tablet {
       flex-direction: row;
-    flex-wrap: wrap;
-    gap:30px
+      flex-wrap: wrap;
+      gap: 30px;
     }
+
     @include desktop {
       gap: 30px;
       margin-top: 50px;
@@ -30,9 +32,16 @@
 
   &__li {
     //margin-top: 30px;
-    flex-basis: (calc(100% - 90px) / 4);
+
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
       0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+
+    @include tablet {
+      flex-basis: (calc(100% - 90px) / 2);
+    }
+    @include desktop {
+      flex-basis: (calc(100% - 90px) / 4);
+    }
   }
 
   &__figure {
