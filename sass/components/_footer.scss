@@ -26,7 +26,7 @@
 
   &__button-newsletter {
     color: $white-color;
-    position: absolute;
+    
     width: 200px;
     height: 50px;
     background: $blue-color;
@@ -45,6 +45,7 @@
     letter-spacing: 0.06em;
     text-align: center;
     vertical-align: text-top;
+    position: absolute;
   }
 
   &__newsletter {
@@ -113,12 +114,12 @@
   &__li {
     margin-top: 9px;
   }
-
+ @media screen and (min-width: 1200px) {
   &__flex {
     display: flex;
     justify-content: flex-start;
     gap: 70px;
-  }
+  }}
 
   &__social-ul {
     display: flex;
