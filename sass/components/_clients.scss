@@ -16,6 +16,15 @@ margin-bottom: 50px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, outline-color;
+width: 210px ;
+  height: 92px;
+@include tablet{
+  width: 226px ;
+  height: 92px;}
+
+  @include desktop {
+  width: 170px ;
+  height: 92px;}
   &:hover {
     fill: $blue-color;
     outline-color: $blue-color;
