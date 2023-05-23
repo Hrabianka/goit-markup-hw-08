@@ -10,7 +10,6 @@
 @import 'components/team';
 @import 'components/clients';
 
-
 body {
   font-family: $main-font, sans-serif;
   background: $white-color;
@@ -48,11 +47,15 @@ h2 {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-   @include desktop {
-   // max-width: 1200px;
+  @include desktop {
+    // max-width: 1200px;
   }
 }
 
 label {
   margin-bottom: 8px;
+}
+
+* {
+  box-sizing: border-box;
 }
