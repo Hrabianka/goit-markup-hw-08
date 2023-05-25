@@ -5,7 +5,32 @@
   border-bottom-style: solid;
   padding: 16px 0px 16px 0px;
 
+&__logo {
+  font-family: $logo-font, sans-serif;
+  text-decoration: none;
+  color: inherit;
 
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  &:hover {
+    color: $blue-color;
+  }
+  &:focus {
+    color: $blue-color;
+  }
+} 
+&__web {
+  color: $blue-color;
+}
+&__studio {
+  color: $black-color;
+}
+
+@include desktop {
 &__main-ikon-smartphone {
   fill: currentColor;
   vertical-align: middle;
@@ -88,31 +113,9 @@
   gap: 50px;
 }
 
-&__web {
-  color: $blue-color;
-}
-&__studio {
-  color: $black-color;
-}
 
-&__logo {
-  font-family: $logo-font, sans-serif;
-  text-decoration: none;
-  color: inherit;
 
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-  &:hover {
-    color: $blue-color;
-  }
-  &:focus {
-    color: $blue-color;
-  }
-}
+
 
 &__e-mail {
   text-decoration: none;
@@ -169,5 +172,5 @@
     margin-top: 29px;
     display: block;
   }
-}
+}}
 }

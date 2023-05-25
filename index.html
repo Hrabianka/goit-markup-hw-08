@@ -28,35 +28,57 @@
         <a href="/" class="header__logo">
           <span class="header__web"> Web</span><span class="header__studio">Studio</span>
         </a>
-        <nav class="header__navigation">
-          <ul class="header__navigation-ul">
-            <li>
-              <div class="header__is-active">
-                <a href="./index.html" class="header__index"> Agencja</a>
-              </div>
-            </li>
-            <li><a href="./portfolio.html" class="header__portfolio">Portfolio</a></li>
-            <li><a href="/kontakt" class="header__contact">Kontakt</a></li>
-          </ul>
-        </nav>
-        <ul class="header__addres-li">
-          <li>
-            <a href="mailto:info@devstudio.com" class="header__e-mail">
-              <svg width="16" height="12" class="header__main-ikon-envelope">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com
-            </a>
-          </li>
+        <div class="header__mobile">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="icon-menu" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
 
-          <li>
-            <a href="tel:+48111111111" class="header__telephone">
-              <svg width="10" height="16" class="header__main-ikon-smartphone">
-                <use href="./images/icons.svg#icon-smartphone"></use>
+        <div class="header__info">
+          <div class="header__mobile_close js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="hamburger__icon hamburger__icon--close" width="40" height="40">
+                <use href="images/icons.svg#icon-closeclose-but"></use>
               </svg>
-              +48 111 111 111
-            </a>
-          </li>
-        </ul>
+            </button>
+          </div>
+
+          <nav class="header__navigation">
+            <ul class="header__navigation-ul">
+              <li>
+                <div class="header__is-active">
+                  <a href="./index.html" class="header__index"> Agencja</a>
+                </div>
+              </li>
+              <li><a href="./portfolio.html" class="header__portfolio">Portfolio</a></li>
+              <li><a href="/kontakt" class="header__contact">Kontakt</a></li>
+            </ul>
+          </nav>
+          <ul class="header__addres-li">
+            <li>
+              <a href="mailto:info@devstudio.com" class="header__e-mail">
+                <svg width="16" height="12" class="header__main-ikon-envelope">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+48111111111" class="header__telephone">
+                <svg width="10" height="16" class="header__main-ikon-smartphone">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -619,7 +641,14 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
