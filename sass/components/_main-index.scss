@@ -5,11 +5,21 @@
   margin-right: auto;
   background: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/background.jpg');
-
   padding-top: 200px;
   padding-bottom: 200px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  max-width:1600px;
+  min-width: 320px;
+
+@include tablet {
+
+  }
+@include desktop {
+
+  }
+
+
 
   &__flex {
     display: flex;
@@ -20,13 +30,18 @@
 
   &__h1 {
     font-weight: 900;
-    font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     max-width: 696px;
     color: $white-color;
+font-size: 26px;
+  
+  @include desktop {
+   font-size: 44px;
+  }
+
   }
 
   &__button {
