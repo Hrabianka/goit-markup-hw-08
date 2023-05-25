@@ -20,6 +20,7 @@
     @include desktop {
       flex-wrap: nowrap;
       gap: 78px;
+      text-align: left;
     }
   }
 
@@ -102,6 +103,7 @@
     @include desktop {
       position: absolute;
       margin-top: 0;
+      margin-left: 12px;
     }
   }
 
