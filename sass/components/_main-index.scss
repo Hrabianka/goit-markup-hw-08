@@ -9,20 +9,14 @@
   padding-bottom: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width:1600px;
+  max-width: 1600px;
   min-width: 320px;
-
-
-
-
-
-
 
   &__flex {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  display: flex;
+    display: flex;
   }
 
   &__h1 {
@@ -33,12 +27,11 @@
     text-transform: uppercase;
     max-width: 696px;
     color: $white-color;
-font-size: 26px;
-  
-  @include desktop {
-   font-size: 44px;
-  }
+    font-size: 26px;
 
+    @include desktop {
+      font-size: 44px;
+    }
   }
 
   &__button {
@@ -85,8 +78,13 @@ font-size: 26px;
 
   &__inside-modal {
     position: absolute;
-    height: 581px;
-    width: 528px;
+    width: 450px;
+    height: 609px;
+
+    @include desktop {
+      height: 581px;
+      width: 528px;
+    }
     background-color: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -113,6 +111,8 @@ font-size: 26px;
   &__form-group {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   &__form-group-p {
@@ -158,7 +158,10 @@ font-size: 26px;
     border-radius: 4px;
     margin-top: 4px;
     height: 40px;
-    width: 448px;
+    width: 370px;
+    @include desktop {
+      width: 448px;
+    }
     padding-left: 38px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -203,7 +206,9 @@ font-size: 26px;
 
   &__form-group-label-last {
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 0px;
+  @include desktop {
+    margin-left: 15px;}
     margin-bottom: 0px;
     position: relative;
     display: block;
@@ -241,7 +246,9 @@ font-size: 26px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
+    @include desktop {
+    font-size: 14px;}
     line-height: 24px;
     position: absolute;
     letter-spacing: 0.03em;
