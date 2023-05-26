@@ -246,7 +246,7 @@
 
   & .header__li {
     display: block;
-    padding: 10px;
+    padding: 0px;
     color: $text-color;
     text-decoration: none;
     list-style-type: none;
@@ -264,15 +264,15 @@
 
   &__second {
     margin-bottom: 64px;
-    margin-top: 306px;
+    margin-top: 302px;
 
     & .header__telephone {
       font-weight: 500;
       font-size: 34px;
       line-height: 40px;
-text-decoration: none;
-color: $blue-color;
-    list-style-type: none;
+      text-decoration: none;
+      color: $blue-color;
+      list-style-type: none;
       letter-spacing: 0.02em;
       margin-bottom: 32px;
     }
@@ -283,16 +283,17 @@ color: $blue-color;
       letter-spacing: 0.02em;
       text-decoration: none;
       color: $silver-color;
-    list-style-type: none;
+      list-style-type: none;
     }
   }
-  &__third{
+  &__third {
     display: flex;
-    gap:20px;
-    & .social-media{
-    text-decoration: none;
-    font-size: 18px;
-line-height: 22px;
-color: $blue-color;}
+    gap: 20px;
+    & .social-media {
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 22px;
+      color: $blue-color;
+    }
   }
 }
