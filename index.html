@@ -28,6 +28,7 @@
         <a href="/" class="header__logo">
           <span class="header__web"> Web</span><span class="header__studio">Studio</span>
         </a>
+
         <div class="header__mobile">
           <button
             class="menu-toggle js-open-menu"
@@ -40,45 +41,35 @@
           </button>
         </div>
 
-        <div class="header__info is-hidden js-menu-container">
-          <div class="header__mobile_close" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-              <svg class="hamburger__icon hamburger__icon--close" width="40" height="40">
-                <use href="images/icons.svg#icon-closeclose-but"></use>
-              </svg>
-            </button>
-          </div>
-
-          <nav class="header__navigation">
-            <ul class="header__navigation-ul">
-              <li>
-                <div class="header__is-active">
-                  <a href="./index.html" class="header__index"> Agencja</a>
-                </div>
-              </li>
-              <li><a href="./portfolio.html" class="header__portfolio">Portfolio</a></li>
-              <li><a href="/kontakt" class="header__contact">Kontakt</a></li>
-            </ul>
-          </nav>
-          <ul class="header__addres-li">
+        <nav class="header__navigation">
+          <ul class="header__navigation-ul">
             <li>
-              <a href="mailto:info@devstudio.com" class="header__e-mail">
-                <svg width="16" height="12" class="header__main-ikon-envelope">
-                  <use href="./images/icons.svg#icon-envelope"></use></svg
-                >info@devstudio.com
-              </a>
+              <div class="header__is-active">
+                <a href="./index.html" class="header__index"> Agencja</a>
+              </div>
             </li>
-
-            <li>
-              <a href="tel:+48111111111" class="header__telephone">
-                <svg width="10" height="16" class="header__main-ikon-smartphone">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111
-              </a>
-            </li>
+            <li><a href="./portfolio.html" class="header__portfolio">Portfolio</a></li>
+            <li><a href="/kontakt" class="header__contact">Kontakt</a></li>
           </ul>
-        </div>
+        </nav>
+        <ul class="header__addres-li">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header__e-mail">
+              <svg width="16" height="12" class="header__main-ikon-envelope">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+48111111111" class="header__telephone">
+              <svg width="10" height="16" class="header__main-ikon-smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -259,25 +250,19 @@
             <li class="team__li">
               <figure class="team__figure">
                 <picture>
-                            <source 
-                                srcset="./images/imgproduct-mobile.jpg 1x,
-                                        ./images/imgproduct-mobile-2x.jpg 2x"
-                                media="(min-width: 480px)"
-                            />
-                            <source 
-                                srcset="./images/imgproduct-tab.jpg 1x,
-                                        ./images/imgproduct-tab-2x.jpg 2x"
-                                media="(min-width: 768px)"
-                            />
-                            <source 
-                                srcset="./images/imgproduct.jpg 1x,
-                                        ./images/imgproduct-desk-2x.jpg 2x"
-                                media="(min-width: 1200px)"
-                            />
-                <img
-                  src="images/imgproduct.jpg"
-                  alt="John Doe Product Designer"
-                  class="team__image"
+                  <source
+                    srcset="./images/imgproduct-mobile.jpg 1x, ./images/imgproduct-mobile-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                  <source
+                    srcset="./images/imgproduct-tab.jpg 1x, ./images/imgproduct-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="./images/imgproduct.jpg 1x, ./images/imgproduct-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <img
+                    src="images/imgproduct.jpg"
+                    alt="John Doe Product Designer"
+                    class="team__image"
                 /></picture>
                 <figcaption class="team__signature-position">
                   <div class="team__signature-inside"><center>John Doe</center></div>
@@ -337,27 +322,20 @@
             </li>
             <li class="team__li">
               <figure class="team__figure">
-                
-<picture>
-                            <source 
-                                srcset="./images/imgfront-mobile.jpg 1x,
-                                        ./images/imgfront-mobile-2x.jpg 2x"
-                                media="(min-width: 480px)"
-                            />
-                            <source 
-                                srcset="./images/imgfront-tab.jpg 1x,
-                                        ./images/imgfront-tab-2x.jpg 2x"
-                                media="(min-width: 768px)"
-                            />
-                            <source 
-                                srcset="./images/imgfront.jpg 1x,
-                                        ./images/imgfront-desk-2x.jpg 2x"
-                                media="(min-width: 1200px)"
-                            />
-                <img
-                  src="images/imgfront.jpg"
-                  alt="John Doe Frontend Developer"
-                  class="team__image"
+                <picture>
+                  <source
+                    srcset="./images/imgfront-mobile.jpg 1x, ./images/imgfront-mobile-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                  <source
+                    srcset="./images/imgfront-tab.jpg 1x, ./images/imgfront-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="./images/imgfront.jpg 1x, ./images/imgfront-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <img
+                    src="images/imgfront.jpg"
+                    alt="John Doe Frontend Developer"
+                    class="team__image"
                 /></picture>
                 <figcaption class="team__signature-position">
                   <div class="team__signature-inside"><center>John Doe</center></div>
@@ -418,22 +396,20 @@
             <li class="team__li">
               <figure class="team__figure">
                 <picture>
-                            <source 
-                                srcset="./images/imgmarketing-mobile.jpg 1x,
-                                        ./images/imgmarketing-mobile-2x.jpg 2x"
-                                media="(min-width: 480px)"
-                            />
-                            <source 
-                                srcset="./images/imgmarketing-tab.jpg 1x,
-                                        ./images/imgmarketing-tab-2x.jpg 2x"
-                                media="(min-width: 768px)"
-                            />
-                            <source 
-                                srcset="./images/imgmarketing.jpg 1x,
-                                        ./images/imgmarketing-desk-2x.jpg 2x"
-                                media="(min-width: 1200px)"
-                            />
-                <img src="images/imgmarketing.jpg" alt="John Doe Marketing" class="team__image" /></picture>
+                  <source
+                    srcset="
+                      ./images/imgmarketing-mobile.jpg    1x,
+                      ./images/imgmarketing-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)" />
+                  <source
+                    srcset="./images/imgmarketing-tab.jpg 1x, ./images/imgmarketing-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="./images/imgmarketing.jpg 1x, ./images/imgmarketing-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <img src="images/imgmarketing.jpg" alt="John Doe Marketing" class="team__image"
+                /></picture>
                 <figcaption class="team__signature-position">
                   <div class="team__signature-inside"><center>John Doe</center></div>
                   <div class="team__job-position"><center>Marketing</center></div>
@@ -493,27 +469,23 @@
 
             <li class="team__li">
               <figure class="team__figure">
-                
-<picture>
-                            <source 
-                                srcset="./images/imguidesigner-mobile.jpg 1x,
-                                        ./images/imguidesigner-mobile-2x.jpg 2x"
-                                media="(min-width: 480px)"
-                            />
-                            <source 
-                                srcset="./images/imguidesigner-tab.jpg 1x,
-                                        ./images/imguidesigner-tab-2x.jpg 2x"
-                                media="(min-width: 768px)"
-                            />
-                            <source 
-                                srcset="./images/imguidesigner.jpg 1x,
-                                        ./images/imguidesigner-desk-2x.jpg 2x"
-                                media="(min-width: 1200px)"
-                            />
-                <img
-                  src="images/imguidesigner.jpg"
-                  alt="John Doe UI Designer"
-                  class="team__image"
+                <picture>
+                  <source
+                    srcset="
+                      ./images/imguidesigner-mobile.jpg    1x,
+                      ./images/imguidesigner-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)" />
+                  <source
+                    srcset="./images/imguidesigner-tab.jpg 1x, ./images/imguidesigner-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="./images/imguidesigner.jpg 1x, ./images/imguidesigner-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <img
+                    src="images/imguidesigner.jpg"
+                    alt="John Doe UI Designer"
+                    class="team__image"
                 /></picture>
                 <figcaption class="team__signature-position">
                   <div class="team__signature-inside"><center>John Doe</center></div>
@@ -707,6 +679,52 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="hamburger__icon hamburger__icon--close" width="40" height="40">
+          <use href="images/icons.svg#icon-closeclose-but"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <div class="header__is-active">
+            <a href="./index.html" class="header__index header__li"> Agencja</a>
+          </div>
+        </li>
+        <li><a href="./portfolio.html" class="header__portfolio header__li">Portfolio</a></li>
+        <li><a href="/kontakt" class="header__contact header__li">Kontakt</a></li>
+      </ul>
+      <ul class="mobile-menu mobile-menu__second">
+        <li>
+          <a href="tel:+48111111111" class="header__telephone">
+            
+            +48 111 111 111
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="header__e-mail">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu mobile-menu__third">
+        <li><a href="instagram.com" class="social-media">
+            Instagram
+          </a></li>
+          <li><a href="twitter.com" class="social-media">
+            Twitter
+          </a></li>
+          <li><a href="facebook.com" class="social-media">
+            Facebook
+          </a></li>
+          <li><a href="linkedIn.com" class="social-media">
+            LinkedIn
+          </a></li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -715,7 +733,6 @@
     ></script>
 
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
 <!--  -->
