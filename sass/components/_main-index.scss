@@ -12,20 +12,17 @@
   max-width:1600px;
   min-width: 320px;
 
-@include tablet {
 
-  }
-@include desktop {
 
-  }
+
 
 
 
   &__flex {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  display: flex;
   }
 
   &__h1 {
