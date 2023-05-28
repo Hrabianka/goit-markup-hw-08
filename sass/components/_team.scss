@@ -1,4 +1,5 @@
 .team {
+  display: none;
   margin-left: 0px;
   margin-right: 0px;
   background: $whiter-color;
@@ -13,6 +14,7 @@
   }
 
   &__list {
+
     justify-content: center;
     display: flex;
     flex-direction: column;
