@@ -1,11 +1,22 @@
 .clients {
   &__ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-  }
+  flex-wrap: wrap;
+  margin: -15px;
 
+  }
+  
+&__li{
+  flex-basis: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+    @include tablet{
+       flex-basis: calc((100% - 30px * 3) / 3);
+    }
+    @include desktop{
+       flex-basis: calc((100% - 30px * 6) / 6);
+    }
+ 
+}
   &__h2 {
     margin-bottom: 50px;
   }
@@ -16,9 +27,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill, outline-color;
-
-    width: 45%;
-    height: 45%;
+    height: 92px;
+    width: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
     @include tablet {
       width: 226px;
       height: 92px;
