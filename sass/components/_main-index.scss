@@ -1,5 +1,4 @@
 .main-index {
-  display: none;
   background-position: center;
   background-color: $grey-color;
   margin-left: auto;
@@ -48,6 +47,7 @@
     background: $blue-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 0;
     color: $white-color;
 
     &:hover {
@@ -79,9 +79,12 @@
 
   &__inside-modal {
     position: absolute;
-    width: 450px;
-    height: 609px;
-
+    width: 98%;
+    height: 560px;
+    @include tablet {
+      width: 450px;
+      height: 609px;
+    }
     @include desktop {
       height: 581px;
       width: 528px;
@@ -129,7 +132,7 @@
   }
 
   &__form-group-label {
-    margin-top: 10px;
+    margin-top: 2px;
     display: flex;
     flex-direction: column;
     color: $silver-color;
@@ -140,6 +143,9 @@
     line-height: 14px;
     position: relative;
     letter-spacing: 0.01em;
+    @include desktop {
+      margin-top: 10px;
+    }
   }
 
   &__form-group-svg {
@@ -159,7 +165,7 @@
     border-radius: 4px;
     margin-top: 4px;
     height: 40px;
-    width: 370px;
+    width: 98%;
     @include desktop {
       width: 448px;
     }
@@ -173,7 +179,7 @@
       border-color: $blue-color;
       outline: none;
     }
-    &:focus-within + .main-index-form-group-svg {
+    &:focus-within + .main-index__form-group-svg {
       fill: $blue-color;
       border-color: $blue-color;
       outline: none;
@@ -208,8 +214,9 @@
   &__form-group-label-last {
     margin-top: 10px;
     margin-left: 0px;
-  @include desktop {
-    margin-left: 15px;}
+    @include desktop {
+      margin-left: 15px;
+    }
     margin-bottom: 0px;
     position: relative;
     display: block;
@@ -220,19 +227,19 @@
     -ms-user-select: none;
     user-select: none;
 
-    & .main-index-form-group-input-last {
+    & .main-index__form-group-input-last {
       position: absolute;
       opacity: 0;
       cursor: pointer;
       height: 0;
       width: 0;
     }
-    & .main-index-form-group-input-last:checked ~ .main-index-checkmark {
+    & .main-index__form-group-input-last:checked ~ .main-index__checkmark {
       background-color: $blue-color;
       border-color: $blue-color;
     }
 
-    & .main-index-form-group-input-last:checked ~ .main-index-checkmark:after {
+    & .main-index__form-group-input-last:checked ~ .main-index__checkmark:after {
       display: block;
     }
   }
@@ -249,7 +256,8 @@
     font-weight: 400;
     font-size: 12px;
     @include desktop {
-    font-size: 14px;}
+      font-size: 14px;
+    }
     line-height: 24px;
     position: absolute;
     letter-spacing: 0.03em;
