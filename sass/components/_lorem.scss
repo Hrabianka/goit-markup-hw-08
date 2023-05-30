@@ -1,4 +1,5 @@
 .lorem {
+ 
   padding-bottom: 0px;
 
   &__ul {
@@ -21,7 +22,7 @@
   }
 
   &__li {
-      
+      flex-basis: (calc(100% - 90px))/1;
     @include tablet {
       flex-basis: (calc(100% - 90px))/2;
     }
