@@ -1,5 +1,4 @@
 .lorem {
-  display: none;
   padding-bottom: 0px;
 
   &__ul {
@@ -22,6 +21,7 @@
   }
 
   &__li {
+      
     @include tablet {
       flex-basis: (calc(100% - 90px))/2;
     }
@@ -33,22 +33,28 @@
   &__icon {
     outline: 1px dashed $whiter-color;
     background-color: $whiter-color;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 190px;
-    margin-bottom: 30px;
-    width: 450px;
+    display: inline-block;
     height: 120px;
+    width: 100%;
+    display: grid;
+
+    //padding-left: 38%;
+   // padding-top: 7%;
+   
+ 
+
     @include tablet {
       width: 354px;
       height: 120px;
-      padding-left: 142px;
+      //padding-left: 142px;
+      //padding-top: 25px;
     }
 
     @include desktop {
       width: 270px;
       height: 120px;
-      padding-left: 100px;
+      //padding-left: 100px;
+      //padding-top: 25px;
     }
   }
 
@@ -60,7 +66,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: inherit;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 0px;
     text-align: center;
     @include tablet {
@@ -79,7 +85,7 @@
     color: $silver-color;
     margin-top: 10px;
     margin-bottom: 0px;
-    width: 450px;
+    width: 100%;
 
     @include tablet {
       width: 354px;
