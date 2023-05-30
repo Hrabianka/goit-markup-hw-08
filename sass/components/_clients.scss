@@ -1,39 +1,40 @@
-.clients{
-  display: none;
-  &__ul{
- display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+.clients {
+  &__ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
   }
 
-  &__h2{
-margin-bottom: 50px;
+  &__h2 {
+    margin-bottom: 50px;
   }
 
-  &__icon{
-     outline: 1px auto $footer-color;
-  fill: $footer-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill, outline-color;
-width: 210px ;
-  height: 92px;
-@include tablet{
-  width: 226px ;
-  height: 92px;}
+  &__icon {
+    outline: 1px auto $footer-color;
+    fill: $footer-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, outline-color;
 
-  @include desktop {
-  width: 170px ;
-  height: 92px;}
-  &:hover {
-    fill: $blue-color;
-    outline-color: $blue-color;
-  }
-  &:focus {
-    fill: $blue-color;
-    outline-color: $blue-color;
-  }
+    width: 45%;
+    height: 45%;
+    @include tablet {
+      width: 226px;
+      height: 92px;
+    }
 
+    @include desktop {
+      width: 170px;
+      height: 92px;
+    }
+    &:hover {
+      fill: $blue-color;
+      outline-color: $blue-color;
+    }
+    &:focus {
+      fill: $blue-color;
+      outline-color: $blue-color;
+    }
   }
 }
