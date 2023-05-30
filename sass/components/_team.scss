@@ -63,7 +63,36 @@
       height: 260px;
     }
   }
+&__social_li{
+  display: flex;
+    justify-content: center;
 
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+}
+
+&__a{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $white-color;
+       background: $blue-color;
+    }
+    &:hover use,
+    &:focus use {
+      fill: $white-color;
+       background: $blue-color;
+    }
+}
   &__icons {
     display: flex;
     flex-wrap: wrap;
