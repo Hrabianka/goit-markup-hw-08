@@ -9,23 +9,22 @@
   @include tablet {
     height: 80px;
   }
-  &__mobile{
-     @include tablet {display: none;}
+  &__mobile {
+    @include tablet {
+      display: none;
+    }
   }
   &__second {
     display: none;
-      @include tablet {
-        display: flex;
-      }
-    
+    @include tablet {
+      display: flex;
+    }
   }
   &__third {
     display: none;
-      @include tablet {
-        display: flex;
-        flex-direction: row;
-      flex-wrap: wrap;
-      }
+    @include tablet {
+      display: block;
+    }
   }
   &__navigation-ul {
     display: none;
@@ -33,8 +32,15 @@
     @include tablet {
       display: flex;
       justify-content: space-between;
-      gap: 46px;
+      gap: 60px;
       padding-top: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    @include desktop {
+      gap: 46px;
+      margin-top: 16px;
+      margin-bottom: 16px;
     }
   }
 
@@ -43,11 +49,12 @@
 
     @include tablet {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
     }
     @include desktop {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       gap: 50px;
     }
@@ -56,14 +63,13 @@
     display: none;
     @include tablet {
       display: flex;
-     
     }
   }
   &__flex {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    //align-items: center;
+    align-items: center;
   }
   &__info {
     width: 100%;
@@ -98,15 +104,20 @@
     color: $black-color;
   }
 
-  @include tablet {
-    &__main-ikon-smartphone {
+  &__main-ikon-envelope {
+    @include tablet {
       fill: currentColor;
       vertical-align: middle;
       padding: 0px;
+      margin-right: 8px;
+    }
+    @include desktop {
       margin-right: 10px;
     }
+  }
 
-    &__main-ikon-envelope {
+  @include tablet {
+    &__main-ikon-smartphone {
       fill: currentColor;
       vertical-align: middle;
       padding: 0px;
@@ -160,46 +171,6 @@
       }
     }
 
-    &__e-mail {
-      text-decoration: none;
-      color: inherit;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-property: color, fill;
-      font-size: 14px;
-      line-height: 1.14;
-      &:hover {
-        color: $blue-color;
-        fill: $blue-color;
-      }
-      &:focus {
-        color: $blue-color;
-        fill: $blue-color;
-      }
-    }
-
-    &__telephone {
-      
-      @include tablet {
-        text-decoration: none;
-        color: inherit;
-        font-size: 14px;
-        line-height: 1.14;
-        color: var(--silver-color);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: color, fill;
-        &:hover {
-          color: $blue-color;
-          fill: $blue-color;
-        }
-        &:focus {
-          color: $blue-color;
-          fill: $blue-color;
-        }
-      }
-    }
-
     &__is-active {
       position: relative;
       &::after {
@@ -210,9 +181,60 @@
 
         width: 100%;
         height: 4px;
-        margin-top: 29px;
+        margin-top: 30px;
         display: block;
+        @include desktop {
+          margin-top: 29px;
+        }
       }
+    }
+  }
+
+  &__e-mail {
+    @include tablet {
+      text-decoration: none;
+      color: $silver-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: color, fill;
+      font-size: 12px;
+      line-height: 1.14;
+      &:hover {
+        color: $blue-color;
+        fill: $blue-color;
+      }
+      &:focus {
+        color: $blue-color;
+        fill: $blue-color;
+      }
+    }
+    @include desktop {
+      font-size: 14px;
+      color: $black-color;
+    }
+  }
+
+  &__telephone {
+    @include tablet {
+      text-decoration: none;
+      color: $silver-color;
+      font-size: 12px;
+      line-height: 1.14;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: color, fill;
+      &:hover {
+        color: $blue-color;
+        fill: $blue-color;
+      }
+      &:focus {
+        color: $blue-color;
+        fill: $blue-color;
+      }
+    }
+    @include desktop {
+      font-size: 14px;
+      color: $black-color;
     }
   }
 }
