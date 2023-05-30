@@ -1,5 +1,4 @@
 .header {
-  
   background: $white-color;
   border-bottom-color: $border-bottom;
   border-bottom-width: 1px;
@@ -10,7 +9,24 @@
   @include tablet {
     height: 80px;
   }
-
+  &__mobile{
+     @include tablet {display: none;}
+  }
+  &__second {
+    display: none;
+      @include tablet {
+        display: flex;
+      }
+    
+  }
+  &__third {
+    display: none;
+      @include tablet {
+        display: flex;
+        flex-direction: row;
+      flex-wrap: wrap;
+      }
+  }
   &__navigation-ul {
     display: none;
 
@@ -24,6 +40,7 @@
 
   &__addres-li {
     display: none;
+
     @include tablet {
       display: flex;
       flex-direction: row;
@@ -36,18 +53,18 @@
     }
   }
   &__navigation {
-      display: none;
-      @include tablet {
+    display: none;
+    @include tablet {
       display: flex;
-      margin-right: 351px;
-      margin-left: 93px;}
+     
     }
- &__flex {
-      display: flex;
-      justify-content: center;
-      justify-content: space-between;
-      align-items: center;
-    }
+  }
+  &__flex {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    //align-items: center;
+  }
   &__info {
     width: 100%;
     height: 100%;
@@ -69,6 +86,9 @@
     }
     &:focus {
       color: $blue-color;
+    }
+    @include tablet {
+      padding-top: 10px;
     }
   }
   &__web {
@@ -140,8 +160,6 @@
       }
     }
 
-   
-
     &__e-mail {
       text-decoration: none;
       color: inherit;
@@ -161,25 +179,27 @@
     }
 
     &__telephone {
-      text-decoration: none;
-      color: inherit;
-      font-size: 14px;
-      line-height: 1.14;
-      color: var(--silver-color);
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-property: color, fill;
-      &:hover {
-        color: $blue-color;
-        fill: $blue-color;
-      }
-      &:focus {
-        color: $blue-color;
-        fill: $blue-color;
+      
+      @include tablet {
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--silver-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: color, fill;
+        &:hover {
+          color: $blue-color;
+          fill: $blue-color;
+        }
+        &:focus {
+          color: $blue-color;
+          fill: $blue-color;
+        }
       }
     }
 
-    
     &__is-active {
       position: relative;
       &::after {
